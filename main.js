@@ -75,7 +75,8 @@ function afficherMenu() {
 }
 
 function saisirEntierQuestion(question) {
-  return parseInt(saisirChaine(question));
+  return parseInt(readline.question(question));
+  // return parseInt(saisirChaine(question));
 }
 
 function saisirChaine(question) {
