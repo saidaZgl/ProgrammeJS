@@ -47,7 +47,7 @@ while (choixMenu !== 9) {
       afficherLeJoueurLePlusAge();
       break;
     case 3:
-      afficherMoyenneDageDesJoueurs();
+      afficherMoyenneAgeDesJoueurs();
       break;
     case 4:
       ajouterJoueur();
@@ -115,14 +115,14 @@ function afficherLeJoueurLePlusAge() {
   afficherLigneSeparation(SEPARATEUR);
 }
 
-function afficherMoyenneDageDesJoueurs() {
+function afficherMoyenneAgeDesJoueurs() {
   var additionDesAges = 0;
   for (var i = 0; i < lesJoueurs.length; i++) {
     additionDesAges += lesJoueurs[i].age;
   }
   var moyenne = additionDesAges / lesJoueurs.length;
   afficherLigneSeparation(SEPARATEUR);
-  console.log("La moyenne d'age des joueurs est de : " + moyenne);
+  console.log("La moyenne d'âge des joueurs est de : " + moyenne);
   afficherLigneSeparation(SEPARATEUR);
 }
 
